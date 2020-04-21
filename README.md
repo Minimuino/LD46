@@ -9,7 +9,7 @@ CONTROLS:
 
 All art, sound and coding by Carlos Pérez and Nuria Pico.
 
-Powered by [Godot Engine](https://github.com/godotengine/godot)
+Powered by [Godot Engine](https://github.com/godotengine/godot).
 
 Thanks for playing :]
 
@@ -17,11 +17,11 @@ Thanks for playing :]
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-Every file in this project except those in the 'assets' folder is licensed under the [GNU General Public License, version 3](https://www.gnu.org/licenses/gpl-3.0), Copyright (C) 2017 Carlos Pérez.
+Every file in this project except those in the 'assets' folder is licensed under the [GNU General Public License, version 3](https://www.gnu.org/licenses/gpl-3.0), Copyright (C) 2020 Carlos Pérez.
 
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-Every file in the 'assets' folder except 'assets/fonts/Oswald-Bold.ttf' is licensed under the [Creative Commons Attribution-NonCommmercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/), Copyright (C) 2017 Nuria Pico.
+Every file in the 'assets' folder except 'assets/fonts/Oswald-Bold.ttf' is licensed under the [Creative Commons Attribution-NonCommmercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/), Copyright (C) 2020 Nuria Pico.
 
-Font file 'assets/fonts/Oswald-Bold.ttf' is licensed under the [SIL Open Font License](https://www.fontsquirrel.com/license/oswald)
+Font file 'assets/fonts/Oswald-Bold.ttf' is licensed under the [SIL Open Font License](https://www.fontsquirrel.com/license/oswald).
