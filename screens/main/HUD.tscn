@@ -1,0 +1,156 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://assets/ui/spacebar2.png" type="Texture" id=1]
+[ext_resource path="res://assets/ui/spacebar1.png" type="Texture" id=2]
+[ext_resource path="res://screens/main/HUD.gd" type="Script" id=3]
+[ext_resource path="res://screens/title/main_font.tres" type="DynamicFont" id=4]
+[ext_resource path="res://assets/fish/fish4.png" type="Texture" id=6]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.0588235, 0.176471, 0.227451, 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.0588235, 0.176471, 0.227451, 1 )
+
+[node name="HUD" type="CanvasLayer"]
+pause_mode = 2
+script = ExtResource( 3 )
+
+[node name="Control" type="Control" parent="."]
+anchor_left = 0.5
+anchor_top = 0.75
+anchor_right = 0.5
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PressSpace" type="AnimatedSprite" parent="Control"]
+visible = false
+frames = SubResource( 1 )
+
+[node name="GameOverLabel" type="Label" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -140.0
+margin_top = 300.0
+margin_right = 140.0
+margin_bottom = 388.0
+custom_fonts/font = ExtResource( 4 )
+text = "Game Over"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LostByCaptureLabel" type="Label" parent="."]
+visible = false
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -92.0
+margin_bottom = 87.0
+custom_fonts/font = ExtResource( 4 )
+text = "Oh no!  You've been captured!"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LostByFishesLabel" type="Label" parent="."]
+visible = false
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -92.0
+margin_bottom = -4.0
+custom_fonts/font = ExtResource( 4 )
+text = "Too many fishes were captured!"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScoreLabel" type="Label" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -960.0
+margin_top = -236.0
+margin_right = 960.0
+margin_bottom = -148.0
+custom_fonts/font = ExtResource( 4 )
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MainMenuButton" type="Button" parent="."]
+visible = false
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -832.0
+margin_top = -440.0
+margin_right = -489.0
+margin_bottom = -346.0
+custom_styles/normal = SubResource( 2 )
+custom_fonts/font = ExtResource( 4 )
+text = " MAIN MENU "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RestartButton" type="Button" parent="."]
+visible = false
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 576.0
+margin_top = -440.0
+margin_right = 851.0
+margin_bottom = -346.0
+custom_styles/normal = SubResource( 3 )
+custom_fonts/font = ExtResource( 4 )
+text = " RESTART "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 1600.0
+margin_top = 48.0
+margin_right = 1640.0
+margin_bottom = 88.0
+rect_scale = Vector2( 7.60649, 2.42187 )
+color = Color( 0, 0, 0, 0.466667 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 1656, 96 )
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 6 )
+
+[node name="FishLabel" type="Label" parent="."]
+margin_left = 1712.0
+margin_top = 48.0
+margin_right = 1752.0
+margin_bottom = 136.0
+custom_fonts/font = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="MainMenuButton" to="." method="_on_MainMenuButton_pressed"]
+[connection signal="pressed" from="RestartButton" to="." method="_on_RestartButton_pressed"]
