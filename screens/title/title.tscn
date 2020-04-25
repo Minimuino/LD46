@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://screens/title/title.gd" type="Script" id=1]
 [ext_resource path="res://assets/background_menu.png" type="Texture" id=2]
@@ -6,6 +6,11 @@
 [ext_resource path="res://screens/title/main_font.tres" type="DynamicFont" id=4]
 [ext_resource path="res://assets/how_to_play.png" type="Texture" id=5]
 [ext_resource path="res://screens/title/button_styleboxflat.tres" type="StyleBox" id=6]
+[ext_resource path="res://assets/fonts/Oswald-Bold.ttf" type="DynamicFontData" id=7]
+
+[sub_resource type="DynamicFont" id=2]
+size = 36
+font_data = ExtResource( 7 )
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.0588235, 0.176471, 0.227451, 1 )
@@ -52,6 +57,15 @@ custom_styles/normal = ExtResource( 6 )
 custom_fonts/font = ExtResource( 4 )
 text = " HOW TO PLAY "
 
+[node name="ToggleFullscreenButton" type="Button" parent="."]
+margin_left = 1472.0
+margin_top = 960.0
+margin_right = 1856.0
+margin_bottom = 1024.0
+custom_styles/normal = ExtResource( 6 )
+custom_fonts/font = SubResource( 2 )
+text = " Toggle Fullscreen "
+
 [node name="HowToPlay" type="TextureRect" parent="."]
 visible = false
 margin_right = 1920.0
@@ -71,4 +85,5 @@ __meta__ = {
 }
 [connection signal="pressed" from="StartButton" to="." method="_on_StartButton_pressed"]
 [connection signal="pressed" from="HowToPlayButton" to="." method="_on_HowToPlayButton_pressed"]
+[connection signal="pressed" from="ToggleFullscreenButton" to="." method="_on_ToggleFullscreenButton_pressed"]
 [connection signal="pressed" from="HowToPlay/BackButton" to="." method="_on_BackButton_pressed"]

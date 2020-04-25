@@ -19,3 +19,6 @@ func _on_HowToPlayButton_pressed():
 
 func _on_BackButton_pressed():
     $HowToPlay.visible = false
+
+func _on_ToggleFullscreenButton_pressed():
+    OS.window_fullscreen = !OS.window_fullscreen
