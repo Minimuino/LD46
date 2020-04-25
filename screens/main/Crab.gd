@@ -37,9 +37,11 @@ func get_input(delta: float):
         $Sprite.frame = 1
         $ClawStreamPlayer.play()
         var bodies = $HoldArea.get_overlapping_bodies()
-        if bodies.size() > 0 and bodies[0].is_in_group("trash"):
-            bodies[0].grab(self, Vector2(0, -90).rotated(PI/2), true)
-            grabbed_item = bodies[0]
+        for body in bodies:
+            if body.is_in_group("trash"):
+                body.grab(self, Vector2(0, -90).rotated(PI/2), true)
+                grabbed_item = body
+                break
     if Input.is_action_just_released("ui_accept"):
         $Sprite.frame = 0
         if grabbed_item != null and is_instance_valid(grabbed_item):

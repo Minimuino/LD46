@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://screens/main/Crab.tscn" type="PackedScene" id=1]
 [ext_resource path="res://screens/main/Main.gd" type="Script" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://screens/main/Boat.tscn" type="PackedScene" id=13]
 [ext_resource path="res://screens/main/EelPath.tscn" type="PackedScene" id=14]
 [ext_resource path="res://screens/main/Trash.tscn" type="PackedScene" id=15]
+[ext_resource path="res://assets/bottom.png" type="Texture" id=16]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 2304, 352 )
@@ -93,7 +94,7 @@ zoom = Vector2( 1.5, 1.5 )
 limit_left = 1
 limit_top = 0
 limit_right = 4312
-limit_bottom = 2792
+limit_bottom = 3140
 limit_smoothed = true
 smoothing_enabled = true
 smoothing_speed = 1.0
@@ -124,6 +125,11 @@ shape = SubResource( 2 )
 z_index = 1
 texture = ExtResource( 4 )
 centered = false
+
+[node name="Bottom" type="Sprite" parent="WorldBounds"]
+position = Vector2( 2160, 3096 )
+z_index = 1
+texture = ExtResource( 16 )
 
 [node name="WaterBounds" type="StaticBody2D" parent="."]
 collision_mask = 0
