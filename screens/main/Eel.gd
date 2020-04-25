@@ -1,7 +1,5 @@
 extends Area2D
 
-signal shock_player
-
 func _ready():
     $AnimatedSprite.play("move")
 

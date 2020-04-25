@@ -26,7 +26,7 @@ func show_you_win():
     $ScoreLabel.visible = true
     $ScoreLabel.text = "Well Done! You saved " + str(GameData.get("total_fishes")) + " fishes!"
 
-func _process(delta):
+func _process(_delta):
     $FishLabel.text = str(GameData.get("total_fishes")) + "/" + str(get_parent().fish_count)
 
 func _on_MainMenuButton_pressed():

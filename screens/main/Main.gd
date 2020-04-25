@@ -9,7 +9,7 @@ var boat_count = 4
 
 func _ready():
     GameData.store("total_fishes", fish_count)
-    for i in range(trash_count):
+    for _i in range(trash_count):
         $TrashSpawnPath/TrashSpawnPosition.offset = randi()
         var new_trash = Trash.instance()
         new_trash.position = $TrashSpawnPath/TrashSpawnPosition.position
@@ -19,7 +19,7 @@ func _input(event):
     if event.is_action_pressed("ui_cancel"):
         get_tree().quit()
 
-func _process(delta):
+func _process(_delta):
     if boat_count <= 0:
         $HUD.show_you_win()
     if GameData.get("total_fishes") <= 0:

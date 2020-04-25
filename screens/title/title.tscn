@@ -1,18 +1,18 @@
 [gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://screens/title/title.gd" type="Script" id=1]
-[ext_resource path="res://assets/background_menu.png" type="Texture" id=2]
+[ext_resource path="res://assets/ui/background_menu.png" type="Texture" id=2]
 [ext_resource path="res://screens/main/Main.tscn" type="PackedScene" id=3]
-[ext_resource path="res://screens/title/main_font.tres" type="DynamicFont" id=4]
-[ext_resource path="res://assets/how_to_play.png" type="Texture" id=5]
-[ext_resource path="res://screens/title/button_styleboxflat.tres" type="StyleBox" id=6]
+[ext_resource path="res://assets/ui/main_font.tres" type="DynamicFont" id=4]
+[ext_resource path="res://assets/ui/how_to_play.png" type="Texture" id=5]
+[ext_resource path="res://assets/ui/button_styleboxflat.tres" type="StyleBox" id=6]
 [ext_resource path="res://assets/fonts/Oswald-Bold.ttf" type="DynamicFontData" id=7]
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=1]
 size = 36
 font_data = ExtResource( 7 )
 
-[sub_resource type="StyleBoxFlat" id=1]
+[sub_resource type="StyleBoxFlat" id=2]
 bg_color = Color( 0.0588235, 0.176471, 0.227451, 1 )
 
 [node name="title" type="Control"]
@@ -63,7 +63,7 @@ margin_top = 960.0
 margin_right = 1856.0
 margin_bottom = 1024.0
 custom_styles/normal = ExtResource( 6 )
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 1 )
 text = " Toggle Fullscreen "
 
 [node name="HowToPlay" type="TextureRect" parent="."]
@@ -77,7 +77,7 @@ margin_left = 128.0
 margin_top = 128.0
 margin_right = 317.0
 margin_bottom = 222.0
-custom_styles/normal = SubResource( 1 )
+custom_styles/normal = SubResource( 2 )
 custom_fonts/font = ExtResource( 4 )
 text = " BACK "
 __meta__ = {

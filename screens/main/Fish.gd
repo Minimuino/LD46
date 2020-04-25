@@ -8,7 +8,7 @@ func _ready():
     yield(get_tree().create_timer(2), "timeout")
     $Bubbles.emitting = true
 
-func _process(delta):
+func _process(_delta):
     if get_global_transform().origin.x > 5000 or get_global_transform().origin.x < -500:
         queue_free()
 

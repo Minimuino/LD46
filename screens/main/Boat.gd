@@ -16,7 +16,7 @@ func _ready():
     for rod in rods:
         rod.get_node("AnimationPlayer").play("rod_down")
 
-func _process(delta):
+func _process(_delta):
     for rod in rods:
         if rod.get_node("AnimationPlayer").is_playing():
             rod.update_hook_position(rod.get_node("Path2D/PathFollow2D").position)
@@ -25,9 +25,9 @@ func _process(delta):
     if get_global_transform().origin.x > 5000 or get_global_transform().origin.x < -500:
         destroy()
 
-func _physics_process(delta):
+func _physics_process(_delta):
     if leaving:
-        move_and_slide(Vector2(-SPEED, 0))
+        var _velocity = move_and_slide(Vector2(-SPEED, 0))
 
 func leave():
     if leaving:

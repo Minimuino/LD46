@@ -18,7 +18,7 @@ func _input(event):
     if grabbed_by != null and event.is_action_pressed("ui_select"):
         emergency_key_hits += 1
 
-func get_input(delta: float):
+func get_input(_delta: float):
     var new_velocity = Vector2()
     if Input.is_action_pressed('ui_right'):
         new_velocity.x += 1

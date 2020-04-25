@@ -2,12 +2,12 @@
 
 [ext_resource path="res://screens/main/Crab.tscn" type="PackedScene" id=1]
 [ext_resource path="res://screens/main/Main.gd" type="Script" id=2]
-[ext_resource path="res://assets/background/background2.png" type="Texture" id=3]
-[ext_resource path="res://assets/walls.png" type="Texture" id=4]
-[ext_resource path="res://assets/vegetation.png" type="Texture" id=5]
-[ext_resource path="res://assets/stones.png" type="Texture" id=6]
-[ext_resource path="res://assets/background/background3.png" type="Texture" id=7]
-[ext_resource path="res://assets/background/background1.png" type="Texture" id=8]
+[ext_resource path="res://assets/world/background/background2.png" type="Texture" id=3]
+[ext_resource path="res://assets/world/walls.png" type="Texture" id=4]
+[ext_resource path="res://assets/world/vegetation.png" type="Texture" id=5]
+[ext_resource path="res://assets/world/stones.png" type="Texture" id=6]
+[ext_resource path="res://assets/world/background/background3.png" type="Texture" id=7]
+[ext_resource path="res://assets/world/background/background1.png" type="Texture" id=8]
 [ext_resource path="res://assets/sound/music.ogg" type="AudioStream" id=9]
 [ext_resource path="res://screens/main/HUD.tscn" type="PackedScene" id=10]
 [ext_resource path="res://screens/main/Fish.tscn" type="PackedScene" id=11]
@@ -15,7 +15,7 @@
 [ext_resource path="res://screens/main/Boat.tscn" type="PackedScene" id=13]
 [ext_resource path="res://screens/main/EelPath.tscn" type="PackedScene" id=14]
 [ext_resource path="res://screens/main/Trash.tscn" type="PackedScene" id=15]
-[ext_resource path="res://assets/bottom.png" type="Texture" id=16]
+[ext_resource path="res://assets/world/bottom.png" type="Texture" id=16]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 2304, 352 )
