@@ -1,5 +1,7 @@
 # Crab It Alive!
 
+![crab-it-alive](https://github.com/user-attachments/assets/5c579ce5-b1a3-42e1-b8b8-81736642071e)
+
 Made in 72 hours for Ludum Dare 46. Theme was "keep it alive".
 
 CONTROLS:
